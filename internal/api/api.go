@@ -13,6 +13,5 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 		name = "Gopher"
 	}
 
-	fmt.Fprintf(w, "<!DOCTYPE html>\n")
 	fmt.Fprintf(w, "Hello, %s!\n", html.EscapeString(name))
 }
